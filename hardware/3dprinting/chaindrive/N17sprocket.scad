@@ -1,0 +1,22 @@
+$fn=30;
+difference(){
+//union(){
+    translate([-125,-105,0]){
+        import("Sprocket.stl");
+    }
+    cylinder(h=9,d=8);
+}
+    intersection(){
+        translate([0,0,0]){
+            cylinder(h=9,d=5.2);
+        }
+        translate([-10,2.2,0]){
+            cube([20,10,16]);
+        }
+    }
+    difference(){
+        cylinder(h=9,d=12);
+        translate([0,0,-1]){
+            cylinder(h=11,d=5.2);
+        }
+}
