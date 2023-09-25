@@ -24,4 +24,4 @@ Clicking on the part should take the reader to the item on the intended vendor's
 |[Laser Cutting](https://designandbuiltlabs.simplybook.me/v2/#book/category/2/service/11/count/1/) |      1/min |    TBD |             |    |     |       1/min |                         |        Reading Week |
 |[3D Printing](https://sites.google.com/view/idealab3dprinting/tutorial)                           |  0.15/gram |    TBD |             |    |     |   0.15/gram |                         |        Reading Week |
 |Assembly                                                                                          |    20/hour |    TBD |             |    |     |     20/hour |                         |        Reading Week |
-| **Totals**                                                                                       |            |        |             |    |     | **243.22+** |             **<100.00** |                     |
+| **Totals**                                                                                       |            |        |             |    |     | **243.22+** |             33.3025 |                     |
