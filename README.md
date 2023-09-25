@@ -1,6 +1,6 @@
 # CENG 317 First Class Fall 2023 Submission Sheet
 
-| Student name:                        |           |
+| Student name:                        |Taksim Islam           |
 |--------------------------------------|-----------|	
 |CENG 317 Hardware Project             |           |
 | Section Letter Code:                 |           |
