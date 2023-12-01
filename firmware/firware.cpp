@@ -13,7 +13,10 @@
 int mySTTS; // I2C handle
 float temp;
 
-void setup()
+bool dataReady();
+void getTemperatureF(float *temperature);
+
+int main()
 {
     wiringPiSetup();
     mySTTS = wiringPiI2CSetup(STTS22H_ADDR);
@@ -21,7 +24,7 @@ void setup()
     if (mySTTS == -1)
     {
         std::cerr << "Failed to initialize I2C." << std::endl;
-        return;
+        return 1;
     }
 
     std::cout << "Ready" << std::endl;
@@ -34,39 +37,37 @@ void setup()
     wiringPiI2CWriteReg8(mySTTS, 0x10, STTS22H_1Hz);
 
     // Other setup code...
-}
 
-void loop()
-{
-    if (dataReady())
+    while (true)
     {
-        getTemperatureF(&temp);
+        if (dataReady())
+        {
+            getTemperatureF(&temp);
 
-        // Temperature in different units can be retrieved
-        // using the following functions.
+            // Temperature in different units can be retrieved
+            // using the following functions.
 
-        // getTemperatureC(&temp);
-        // getTemperatureK(&temp);
+             //getTemperatureC(&temp);
+            // getTemperatureK(&temp);
 
-        std::cout << "Temp: " << temp << "F" << std::endl;
+            std::cout << "Temp: " << temp << "F" << std::endl;
+        }
+
+        delay(1000);
     }
 
-    delay(1000);
+    return 0;
 }
 
 bool dataReady()
 {
-    // Implement the dataReady function based on your sensor's specifications
-    // This might involve checking a status register or similar
-    // For example:
+    
     return (wiringPiI2CReadReg8(mySTTS, 0x11) & 0x01) != 0;
 }
 
 void getTemperatureF(float *temperature)
 {
-    // Implement the getTemperatureF function based on your sensor's specifications
-    // This might involve reading from specific registers and converting the raw data
-    // For example:
+    
     int rawTemp = wiringPiI2CReadReg16(mySTTS, 0x12);
     *temperature = (static_cast<float>(rawTemp) / 256.0) + 32.0;
 }
