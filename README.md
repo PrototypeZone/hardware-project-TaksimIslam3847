@@ -9,7 +9,7 @@
 | Section Letter Code:                 |           |
 |Project choice on bb discussion board |           |
 | Sensor/effector name:                |SparkFun Temperature Sensor - STTS22H (Qwiic)|
-| I2C address:                         |0x38       |
+| I2C address:                         |0x3c       |
 | A link to where you will buy it from:|https://www.sparkfun.com/products/21273|
 ## Possible choices:   
 See [Project Introduction](https://github.com/PrototypeZone/ceng317/blob/main/projectintroduction.md)   
