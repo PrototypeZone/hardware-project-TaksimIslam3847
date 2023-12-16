@@ -14,7 +14,7 @@ Your target audience is a Computer Engineering Technology student from a differe
 ## 1.0 SparkFun Temperature Sensor - STTS22H (Qwiic)
 
  My name is Taksim Islam. This is my Pi Temperature Sensor project. It uses SparkFun Temperature Sensor - STTS22H (Qwiic). Connected to a Rasberry Pi. This project will let user measure the temperature for their potted plant/garden.
- 
+ I am using SparkFun Temperature Sensor - STTS22H (Qwiic) over SenseHat cause I don't to put my pi inside the garden as it can get damaged by water.And also SparkFun Temperature Sensor - STTS22H (Qwiic) have range of -40c-+125c compare to SenseHat which have range of -30c to +100c.
 ![image_50450177](https://github.com/PrototypeZone/hardware-project-TaksimIslam3847/assets/108566387/6180341c-93d2-45e0-8626-65a29d0a2edf)
 
 Specification:
